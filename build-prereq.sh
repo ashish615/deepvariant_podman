@@ -75,7 +75,7 @@ function ensure_wanted_bazel_version {
     curl -L -O https://github.com/bazelbuild/bazel/releases/download/"${wanted_bazel_version}"/bazel-"${wanted_bazel_version}"-installer-linux-x86_64.sh
     chmod +x bazel-*.sh
     ./bazel-"${wanted_bazel_version}"-installer-linux-x86_64.sh --user > /dev/null
-    rm bazel-"${wanted_bazel_version}"-installer-linux-x86_64.sh
+    #rm bazel-"${wanted_bazel_version}"-installer-linux-x86_64.sh
     popd
   fi
 }
